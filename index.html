@@ -91,13 +91,48 @@
   font-weight: 600;
 }
 .final-signature {
+  margin-top: 60px;
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+  font-size: 1.6rem;
+
+  /* čelični gradient */
+  background: linear-gradient(135deg, #8f98a0, #d7dbe0, #8f98a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* linija iznad */
+  border-top: 1px solid rgba(255,255,255,0.2);
+
+  /* animacija */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards 0.3s;
+}
+
+.final-signature .en {
+  display: block;
+  margin-top: 12px;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+        
+.final-signature {
   margin-top: 80px;
   margin-bottom: 60px;
   text-align: center;
   font-family: 'Marck Script', cursive;
   font-size: 2rem;
-  color: #9aa3a8; /* tamna čelična */
-  text-shadow: 0 0 8px rgba(150,160,170,0.35);
+  color: #b3bcc4; /* tamna čelična */
+  text-shadow: 0 0 10px rgba(180,190,200,0.35);
 }
 
 .final-signature .en {
